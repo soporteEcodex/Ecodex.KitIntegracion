@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="88ed200e-76f1-465d-a4c7-ee337b44aaaf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://137.135.40.217:7688/ServicioClientes.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CFDI.wsdl" MetadataType="Wsdl" ID="0b13ac41-3127-43cf-8323-e0ccf2150214" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioClientes.svc/mex" />
+    <MetadataFile FileName="CFDI.xsd" MetadataType="Schema" ID="aa49618a-b601-419f-bec3-ed1f3455717c" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioClientes.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c680acd4-189e-49c3-a93e-51e067f2358d" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioClientes.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="6e26ba99-9a4f-4ecb-ab4f-195ac6137a48" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioClientes.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
