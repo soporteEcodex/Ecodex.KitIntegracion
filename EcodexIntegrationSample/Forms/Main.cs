@@ -40,6 +40,10 @@ namespace EcodexIntegrationSample.Forms
 
         public event EventHandler StampService;
 
+        public event EventHandler AsignarTimbres;
+
+        public event EventHandler AltaEmisor;
+
         public void ShowSessionError(Entity.SessionError error)
         {
             MessageBox.Show(String.Format("Status {0}: {1}", error.Status.ToString(), error.Description), "Ecodex UniTest");
@@ -105,6 +109,18 @@ namespace EcodexIntegrationSample.Forms
         {
             if (StampService != null)
                 StampService(this, EventArgs.Empty);
+        }
+
+        private void btnAsignaTimbres_Click(object sender, EventArgs e)
+        {
+            if (AsignarTimbres != null)
+                AsignarTimbres(this, EventArgs.Empty);
+        }
+
+        private void btnAltaEmisor_Click(object sender, EventArgs e)
+        {
+            if (AltaEmisor != null)
+                AltaEmisor(this, EventArgs.Empty);
         }
 
       

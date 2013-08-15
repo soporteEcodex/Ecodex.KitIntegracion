@@ -16,6 +16,8 @@ namespace EcodexIntegrationSample.View
         event EventHandler GenerateXMLFile;
         event EventHandler CancelUUID;
         event EventHandler StampService;
+        event EventHandler AsignarTimbres;
+        event EventHandler AltaEmisor;
 
         #region
         event EventHandler GetInvoice;

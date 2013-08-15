@@ -30,6 +30,8 @@ namespace EcodexIntegrationSample
             _view.GetStatusClient += _view_GetStatusClient;
             _view.GetAdvices += _view_GetAdvices;
             _view.StampService += _view_StampService;
+            _view.AsignarTimbres += _view_AsignarTimbres;
+            _view.AltaEmisor += _view_AltaEmisor;
 
             _random = new Random();
         }
@@ -40,6 +42,23 @@ namespace EcodexIntegrationSample
                 ioForm.ShowDialog();
             }
         }
+
+        void _view_AsignarTimbres(object sender, EventArgs e)
+        {
+            using (var ioForm = new Forms.frmAsignarTimbresEmisor())
+            {
+                ioForm.ShowDialog();
+            }
+        }
+
+        void _view_AltaEmisor(object sender, EventArgs e)
+        {
+            using (var ioForm = new Forms.frmAltaEmisor())
+            {
+                ioForm.ShowDialog();
+            }
+        }
+
         void _view_CancelUUID(object sender, EventArgs e)
         {
             using (var ioForm = new Forms.Cancel())

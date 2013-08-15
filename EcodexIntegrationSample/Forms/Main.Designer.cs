@@ -39,6 +39,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.XMLButton = new System.Windows.Forms.Button();
             this.testXMLButton = new System.Windows.Forms.Button();
+            this.btnAsignaTimbres = new System.Windows.Forms.Button();
+            this.btnAltaEmisor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -60,6 +62,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnAltaEmisor);
+            this.splitContainer1.Panel2.Controls.Add(this.btnAsignaTimbres);
             this.splitContainer1.Panel2.Controls.Add(this.btnStampService);
             this.splitContainer1.Panel2.Controls.Add(this.btnGetAdvices);
             this.splitContainer1.Panel2.Controls.Add(this.btnGetStatusClient);
@@ -69,7 +73,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.XMLButton);
             this.splitContainer1.Panel2.Controls.Add(this.testXMLButton);
-            this.splitContainer1.Size = new System.Drawing.Size(586, 451);
+            this.splitContainer1.Size = new System.Drawing.Size(805, 451);
             this.splitContainer1.SplitterDistance = 367;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 1;
@@ -82,12 +86,12 @@
             this.resultTextBox.Multiline = true;
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.resultTextBox.Size = new System.Drawing.Size(586, 367);
+            this.resultTextBox.Size = new System.Drawing.Size(805, 367);
             this.resultTextBox.TabIndex = 1;
             // 
             // btnStampService
             // 
-            this.btnStampService.Location = new System.Drawing.Point(519, 0);
+            this.btnStampService.Location = new System.Drawing.Point(719, 0);
             this.btnStampService.Name = "btnStampService";
             this.btnStampService.Size = new System.Drawing.Size(62, 81);
             this.btnStampService.TabIndex = 9;
@@ -138,7 +142,7 @@
             // barcodeQR
             // 
             this.barcodeQR.BackColor = System.Drawing.Color.White;
-            this.barcodeQR.Location = new System.Drawing.Point(360, 2);
+            this.barcodeQR.Location = new System.Drawing.Point(578, 2);
             this.barcodeQR.Margin = new System.Windows.Forms.Padding(2);
             this.barcodeQR.Name = "barcodeQR";
             this.barcodeQR.Size = new System.Drawing.Size(75, 76);
@@ -157,7 +161,7 @@
             // 
             // XMLButton
             // 
-            this.XMLButton.Location = new System.Drawing.Point(443, 0);
+            this.XMLButton.Location = new System.Drawing.Point(655, 0);
             this.XMLButton.Margin = new System.Windows.Forms.Padding(2);
             this.XMLButton.Name = "XMLButton";
             this.XMLButton.Size = new System.Drawing.Size(62, 81);
@@ -178,11 +182,31 @@
             this.testXMLButton.UseVisualStyleBackColor = true;
             this.testXMLButton.Click += new System.EventHandler(this.testXMLButton_Click);
             // 
+            // btnAsignaTimbres
+            // 
+            this.btnAsignaTimbres.Location = new System.Drawing.Point(363, 0);
+            this.btnAsignaTimbres.Name = "btnAsignaTimbres";
+            this.btnAsignaTimbres.Size = new System.Drawing.Size(60, 80);
+            this.btnAsignaTimbres.TabIndex = 10;
+            this.btnAsignaTimbres.Text = "Asigna Timbres";
+            this.btnAsignaTimbres.UseVisualStyleBackColor = true;
+            this.btnAsignaTimbres.Click += new System.EventHandler(this.btnAsignaTimbres_Click);
+            // 
+            // btnAltaEmisor
+            // 
+            this.btnAltaEmisor.Location = new System.Drawing.Point(425, 0);
+            this.btnAltaEmisor.Name = "btnAltaEmisor";
+            this.btnAltaEmisor.Size = new System.Drawing.Size(60, 80);
+            this.btnAltaEmisor.TabIndex = 11;
+            this.btnAltaEmisor.Text = "Alta Emisor";
+            this.btnAltaEmisor.UseVisualStyleBackColor = true;
+            this.btnAltaEmisor.Click += new System.EventHandler(this.btnAltaEmisor_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 451);
+            this.ClientSize = new System.Drawing.Size(805, 451);
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
@@ -211,5 +235,7 @@
         private System.Windows.Forms.Button btnGetStatusClient;
         private System.Windows.Forms.Button btnGetAdvices;
         private System.Windows.Forms.Button btnStampService;
+        private System.Windows.Forms.Button btnAsignaTimbres;
+        private System.Windows.Forms.Button btnAltaEmisor;
     }
 }

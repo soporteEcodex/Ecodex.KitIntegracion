@@ -72,6 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CancelController.cs" />
+    <Compile Include="Controllers\frmAltaEmisorController.cs" />
+    <Compile Include="Controllers\frmAsignaTimbreEmisorController.cs" />
     <Compile Include="Controllers\frmCancelaTimbradoController.cs" />
     <Compile Include="Controllers\frmComprobanteController.cs" />
     <Compile Include="Controllers\frmGetAvisosController.cs" />
@@ -95,6 +97,18 @@
     </Compile>
     <Compile Include="Forms\Error.Designer.cs">
       <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAltaEmisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAltaEmisor.Designer.cs">
+      <DependentUpon>frmAltaEmisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAsignarTimbresEmisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAsignarTimbresEmisor.Designer.cs">
+      <DependentUpon>frmAsignarTimbresEmisor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCancelaTimbrado.cs">
       <SubType>Form</SubType>
@@ -193,8 +207,11 @@
     <Compile Include="Translates\TranslateFault.cs" />
     <Compile Include="Utils\Security.cs" />
     <Compile Include="Utils\Utilerias.cs" />
+    <Compile Include="View\IAltaEmisor.cs" />
     <Compile Include="View\ICancel.cs" />
+    <Compile Include="View\ICancelaMultiple.cs" />
     <Compile Include="View\ICancelaTimbrado.cs" />
+    <Compile Include="View\IfrmAsignaTimbreEmisor.cs" />
     <Compile Include="View\IfrmComprobante.cs" />
     <Compile Include="View\IfrmGetAvisos.cs" />
     <Compile Include="View\IfrmGetStatusClient.cs" />
@@ -211,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Error.resx">
       <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAltaEmisor.resx">
+      <DependentUpon>frmAltaEmisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAsignarTimbresEmisor.resx">
+      <DependentUpon>frmAsignarTimbresEmisor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCancelaTimbrado.resx">
       <DependentUpon>frmCancelaTimbrado.cs</DependentUpon>
