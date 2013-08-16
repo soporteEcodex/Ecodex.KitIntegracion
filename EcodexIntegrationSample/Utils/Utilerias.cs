@@ -15,8 +15,8 @@ namespace EcodexIntegrationSample.Utils
         /// </summary>
         //public String INTEGRATOR_ID = "2b3a8764-d586-4543-9b7e-82834443f219";
 
-        //public String INTEGRATOR_ID = "a44c9d23-5c35-487b-9857-8afc2128485c";
-        public String INTEGRATOR_ID = "ac377e0f-745c-4a09-ad5b-6db8f0db217f";
+        public String INTEGRATOR_ID = "a44c9d23-5c35-487b-9857-8afc2128485c";
+        //public String INTEGRATOR_ID = "ac377e0f-745c-4a09-ad5b-6db8f0db217f";
         public String AltaIntegrador_ID = "DF627BC3-A872-4806-BF37-DBD040CBAC7C";
 
         //public string RFC = "AAA010101AAA";

@@ -18,6 +18,9 @@ namespace EcodexIntegrationSample.View
         event EventHandler StampService;
         event EventHandler AsignarTimbres;
         event EventHandler AltaEmisor;
+        event EventHandler RecuperaAcuse;
+        //event EventHandler CancelaMultiple;
+        //event EventHandler CancelaOtro;
 
         #region
         event EventHandler GetInvoice;

@@ -42,6 +42,7 @@
             this.txtEstatus = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtClaveCertificado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -157,11 +158,21 @@
             this.txtClaveCertificado.Size = new System.Drawing.Size(150, 20);
             this.txtClaveCertificado.TabIndex = 14;
             // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(16, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "RFC Integrador";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // frmAltaEmisor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 262);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtClaveCertificado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtEstatus);
@@ -200,5 +211,6 @@
         private System.Windows.Forms.TextBox txtEstatus;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtClaveCertificado;
+        private System.Windows.Forms.Label label7;
     }
 }

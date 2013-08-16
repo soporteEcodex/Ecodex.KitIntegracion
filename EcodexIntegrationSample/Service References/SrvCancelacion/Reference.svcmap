@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1209e7db-0e70-4486-8475-e2a8b51aac58" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://137.135.40.217:7688/ServicioCancelacion.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CFDI.wsdl" MetadataType="Wsdl" ID="31c3036e-32a5-40f6-af77-b914f17e241b" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioCancelacion.svc/mex" />
+    <MetadataFile FileName="CFDI.xsd" MetadataType="Schema" ID="3ed3af82-915a-48a7-ae0a-15945eeb8c59" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioCancelacion.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="bfc66ae9-2820-4e8d-8af8-a00c531b373a" SourceId="1" SourceUrl="http://137.135.40.217:7688/ServicioCancelacion.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

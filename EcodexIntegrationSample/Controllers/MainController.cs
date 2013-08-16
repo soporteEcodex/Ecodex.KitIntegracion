@@ -32,7 +32,7 @@ namespace EcodexIntegrationSample
             _view.StampService += _view_StampService;
             _view.AsignarTimbres += _view_AsignarTimbres;
             _view.AltaEmisor += _view_AltaEmisor;
-
+            _view.RecuperaAcuse += _view_RecuperaAcuse;
             _random = new Random();
         }
         void _view_StampService(object sender, EventArgs e)
@@ -54,6 +54,14 @@ namespace EcodexIntegrationSample
         void _view_AltaEmisor(object sender, EventArgs e)
         {
             using (var ioForm = new Forms.frmAltaEmisor())
+            {
+                ioForm.ShowDialog();
+            }
+        }
+
+        void _view_RecuperaAcuse(object sender, EventArgs e)
+        {
+            using (var ioForm = new Forms.frmRecuperaAcuseCancelacion())
             {
                 ioForm.ShowDialog();
             }

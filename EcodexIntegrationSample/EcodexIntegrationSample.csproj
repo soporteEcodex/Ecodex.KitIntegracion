@@ -80,6 +80,7 @@
     <Compile Include="Controllers\frmGetStatusClientController.cs" />
     <Compile Include="Controllers\frmGetStatusTimbradoController.cs" />
     <Compile Include="Controllers\frmObtenerTimbradoController.cs" />
+    <Compile Include="Controllers\frmRecuperaAcuseCancelacionController.cs" />
     <Compile Include="Controllers\frmTimbradoController.cs" />
     <Compile Include="Controllers\frmTimbradoXMLFileController.cs" />
     <Compile Include="Controllers\GetStatusController.cs" />
@@ -146,6 +147,12 @@
     <Compile Include="Forms\frmObtenerTimbrado.Designer.cs">
       <DependentUpon>frmObtenerTimbrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmRecuperaAcuseCancelacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRecuperaAcuseCancelacion.Designer.cs">
+      <DependentUpon>frmRecuperaAcuseCancelacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmTimbrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +186,11 @@
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SrvCancelacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\SrvClients\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -216,6 +228,7 @@
     <Compile Include="View\IfrmGetAvisos.cs" />
     <Compile Include="View\IfrmGetStatusClient.cs" />
     <Compile Include="View\IfrmObtenerTimbrado.cs" />
+    <Compile Include="View\IfrmRecuperaAcuseCancelacion.cs" />
     <Compile Include="View\IfrmTimbrado.cs" />
     <Compile Include="View\IGetStatus.cs" />
     <Compile Include="View\IfrmGetStatusTimbrado.cs" />
@@ -253,6 +266,9 @@
     <EmbeddedResource Include="Forms\frmObtenerTimbrado.resx">
       <DependentUpon>frmObtenerTimbrado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRecuperaAcuseCancelacion.resx">
+      <DependentUpon>frmRecuperaAcuseCancelacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTimbrado.resx">
       <DependentUpon>frmTimbrado.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +305,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\SrvCancelacion\CFDI.wsdl" />
+    <None Include="Service References\SrvCancelacion\CFDI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvCancelacion\EcodexIntegrationSample.SrvCancelacion.ListaResultadoCancelacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SrvCancelacion\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\SrvClients\Arrays.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -371,6 +397,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SrvCancelacion\" />
     <WCFMetadataStorage Include="Service References\SrvClients\" />
     <WCFMetadataStorage Include="Service References\SrvInvoices\" />
     <WCFMetadataStorage Include="Service References\SrvRepository\" />
@@ -379,6 +406,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />
+    <None Include="Service References\SrvCancelacion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvCancelacion\configuration.svcinfo" />
+    <None Include="Service References\SrvCancelacion\configuration91.svcinfo" />
     <None Include="Service References\SrvInvoices\ServicioComprobantes1.disco" />
     <None Include="Service References\SrvRepository\ServicioRepositorio1.disco" />
     <None Include="Service References\SrvSecurity\ServicioSeguridad1.disco" />

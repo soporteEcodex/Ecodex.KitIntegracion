@@ -44,6 +44,8 @@ namespace EcodexIntegrationSample.Forms
 
         public event EventHandler AltaEmisor;
 
+        public event EventHandler RecuperaAcuse;
+
         public void ShowSessionError(Entity.SessionError error)
         {
             MessageBox.Show(String.Format("Status {0}: {1}", error.Status.ToString(), error.Description), "Ecodex UniTest");
@@ -121,6 +123,12 @@ namespace EcodexIntegrationSample.Forms
         {
             if (AltaEmisor != null)
                 AltaEmisor(this, EventArgs.Empty);
+        }
+
+        private void btnRecuperaAcuse_Click(object sender, EventArgs e)
+        {
+            if (RecuperaAcuse != null)
+                RecuperaAcuse(this, EventArgs.Empty);
         }
 
       

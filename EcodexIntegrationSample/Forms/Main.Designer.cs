@@ -41,6 +41,7 @@
             this.testXMLButton = new System.Windows.Forms.Button();
             this.btnAsignaTimbres = new System.Windows.Forms.Button();
             this.btnAltaEmisor = new System.Windows.Forms.Button();
+            this.btnRecuperaAcuse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnRecuperaAcuse);
             this.splitContainer1.Panel2.Controls.Add(this.btnAltaEmisor);
             this.splitContainer1.Panel2.Controls.Add(this.btnAsignaTimbres);
             this.splitContainer1.Panel2.Controls.Add(this.btnStampService);
@@ -202,6 +204,16 @@
             this.btnAltaEmisor.UseVisualStyleBackColor = true;
             this.btnAltaEmisor.Click += new System.EventHandler(this.btnAltaEmisor_Click);
             // 
+            // btnRecuperaAcuse
+            // 
+            this.btnRecuperaAcuse.Location = new System.Drawing.Point(488, 0);
+            this.btnRecuperaAcuse.Name = "btnRecuperaAcuse";
+            this.btnRecuperaAcuse.Size = new System.Drawing.Size(60, 80);
+            this.btnRecuperaAcuse.TabIndex = 12;
+            this.btnRecuperaAcuse.Text = "Recupera Acuse";
+            this.btnRecuperaAcuse.UseVisualStyleBackColor = true;
+            this.btnRecuperaAcuse.Click += new System.EventHandler(this.btnRecuperaAcuse_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,5 +249,6 @@
         private System.Windows.Forms.Button btnStampService;
         private System.Windows.Forms.Button btnAsignaTimbres;
         private System.Windows.Forms.Button btnAltaEmisor;
+        private System.Windows.Forms.Button btnRecuperaAcuse;
     }
 }
